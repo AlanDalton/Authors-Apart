@@ -22,7 +22,7 @@ body {
 	line-height: 1.45;
 	padding: 1rem;
 	position: relative;
-	max-width: 40em;
+	max-width: 45em;
 	margin: 0 auto; 
 }
 h1,
@@ -37,16 +37,29 @@ h1 {
 }
 h2 {
 	font-size: 1.3125em;
-	margin-top: 3.9375em;
+	margin-top: 2.625em;
 }
 h3 {
 	font-size: 1em;
 }
-p {
-	margin-left: 2.5rem;
-}
 li {
 	margin-bottom: 0.5em;
+}
+.books ol,
+.briefs ol {
+	list-style-position: inside;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.books ol li,
+.briefs ol li {
+	border: 0.0625em solid;
+	width: 9em;
+	height: 13.9em;
+	margin-right: 1em;
+	padding: 1em;
 }
 [itemtype="https://schema.org/Book"] [itemprop="name"] {
 	font-weight: bold;
@@ -58,7 +71,7 @@ li {
 	<p><a href="https://abookapart.com/pages/about/">A Book Apart is now closed</a>. I’m trying to track the authors’ preferred ways of making their books available.</p>
 </header>
 <main>
-<section>
+<section class="books">
 <h2>Books</h2>
 <ol>
 <li itemscope itemtype="https://schema.org/Book"><a itemprop="url" href="https://html5forwebdesigners.com/"><span itemprop="name">HTML5 For Web Designers</span></a> 🆓<br><span itemprop="author">Jeremy Keith</span> &amp; <span itemprop="author">Rachel Andrew</span>, <time itemprop="datePublished">2010</time> (first edition) and <time itemprop="dateModified">2016</time> (second edition)</li>
@@ -111,7 +124,7 @@ li {
 <li itemscope itemtype="https://schema.org/Book"><a itemprop="url" href="https://survivingchangeatwork.com/"><span itemprop="name">Surviving Change at Work</span></a><br><span itemprop="author">Vanessa Gennarelli</span>, <time itemprop="datePublished">2023</time></li>
 </ol>
 </section>
-<section>
+<section class="briefs">
 <h2>Briefs</h2>
 <ol>
 <li itemscope itemtype="https://schema.org/Book"><span itemprop="name">Get Ready for CSS Grid Layout</span><br><span itemprop="author">Rachel Andrew</span>, 	<time itemprop="datePublished">2016</time> (first edition) and <time itemprop="dateModified">2019</time> (second edition)</li>
