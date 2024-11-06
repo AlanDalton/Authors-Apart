@@ -74,6 +74,10 @@
 			box-shadow : 0 0.25em 0.5em rgb(0, 0, 0, 0.25);
 			position: relative;
 		}
+		.books ol li::marker,
+		.briefs ol li::marker {
+			content: "№ " counter(list-item);
+		}
 		[itemtype="https://schema.org/Book"]>[itemprop="name"] {
 			font-weight: bold;
 			font-size: large;
