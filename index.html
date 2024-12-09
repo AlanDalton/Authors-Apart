@@ -58,7 +58,8 @@
 			margin-bottom: 2rem;
 		}
 		.books ol,
-		.briefs ol {
+		.briefs ol,
+		.also ul {
 			list-style-position: inside;
 			padding-left: 0;
 			display: flex;
@@ -66,14 +67,15 @@
 			justify-content: space-evenly;
 		}
 		.books ol li,
-		.briefs ol li {
+		.briefs ol li,
+		.also ul li {
 			border: 0.0625em outset;
 			width: 8em;
 			height: 12.36em;
 			margin-right: 0.5em;
 			margin-left: 0.5em;
 			padding: 1em;
-			box-shadow : 0 0.25em 0.5em rgb(0, 0, 0, 0.25);
+			box-shadow: 0 0.25em 0.5em rgb(0, 0, 0, 0.25);
 			position: relative;
 		}
 		.books ol li::marker,
@@ -770,6 +772,22 @@
 					<div itemprop="isAccessibleForFree" content="true">🆓</div>
 				</li>
 			</ol>
+		</section>
+		<section class="also">
+			<h2>Also</h2>
+			<ul>
+				<li itemscope itemtype="https://schema.org/Book">
+					<div itemprop="name">
+						<a itemprop="url" href="https://approachableopensource.com">Approachable Open Source</a>
+					</div>
+					<div itemprop="author" itemscope itemtype="https://schema.org/Person">
+						<span itemprop="name">
+							<a itemprop="url" href="https://brianmuenzenmeyer.com">Brian Muenzenmeyer</a>
+						</span>
+					</div>
+					<time itemprop="datePublished">2024</time>
+				</li>
+			</ul>
 		</section>
 	</main>
 	<footer>
