@@ -71,6 +71,8 @@
 		}
 		.books ol li,
 		.briefs ol li {
+			--covercolorfade1: color-mix(in hsl,var(--covercolor,#EEE0), transparent 98.44%);
+			--covercolorfade2: color-mix(in hsl,var(--covercolor,#EEE0), transparent 87.44%);
 			border: 0.0625em outset;
 			width: 8em;
 			height: 12.36em;
@@ -79,6 +81,8 @@
 			padding: 1em;
 			box-shadow: 0 0.25em 0.5em rgb(0, 0, 0, 0.25);
 			position: relative;
+			background: linear-gradient(180deg,var(--covercolor,#EEE0),var(--covercolor,#EEEF)) 100% 0 / 0.9em 100% no-repeat,
+				linear-gradient(135deg,var(--covercolorfade1),var(--covercolorfade2)) 100% 0 / 100% 100% no-repeat;
 		}
 		.books ol li::marker,
 		.briefs ol li::marker {
@@ -100,7 +104,69 @@
 			right: -0.25em;
 			transform: rotate(-5deg);
 			font-size: 2em;
-		}	
+			text-shadow: 0 0 3px #FFF,0 0 3px #FFF,0 0 3px #FFF,0 0 3px #FFF,0 0 3px #FFF;
+		}
+		.books ol > li:nth-of-type(1)  {--covercolor: hsl(20.8, 75.9%, 56.1%);}
+		.books ol > li:nth-of-type(2)  {--covercolor: hsl(73.6, 75.5%, 40%);}
+		.books ol > li:nth-of-type(3)  {--covercolor: hsl(190.6, 100%, 43.3%);}
+		.books ol > li:nth-of-type(4)  {--covercolor: hsl(43.3, 89%, 57.3%);}
+		.books ol > li:nth-of-type(5)  {--covercolor: hsl(315, 21%, 41.2%);}
+		.books ol > li:nth-of-type(6)  {--covercolor: hsl(171.5, 100%, 24.9%);}
+		.books ol > li:nth-of-type(7)  {--covercolor: hsl(37.5, 100%, 33.9%);}
+		.books ol > li:nth-of-type(8)  {--covercolor: hsl(201, 35.4%, 44.3%);}
+		.books ol > li:nth-of-type(9)  {--covercolor: hsl(28.3, 100%, 62.2%);}
+		.books ol > li:nth-of-type(10) {--covercolor: hsl(342.9, 60.6%, 60.2%);}
+		.books ol > li:nth-of-type(11) {--covercolor: hsl(4.1, 60.5%, 47.6%);}
+		.books ol > li:nth-of-type(12) {--covercolor: hsl(76.2, 32.7%, 44.3%);}
+		.books ol > li:nth-of-type(13) {--covercolor: hsl(177.7, 41.6%, 51%);}
+		.books ol > li:nth-of-type(14) {--covercolor: hsl(181.3, 35.9%, 74.9%);}
+		.books ol > li:nth-of-type(15) {--covercolor: hsl(25.9, 79.3%, 63.9%);}
+		.books ol > li:nth-of-type(16) {--covercolor: hsl(207, 76.5%, 23.3%);}
+		.books ol > li:nth-of-type(17) {--covercolor: hsl(337, 51.4%, 42.7%);}
+		.books ol > li:nth-of-type(18) {--covercolor: rebeccapurple;}
+		.books ol > li:nth-of-type(19) {--covercolor: hsl(220.7, 67%, 60.8%);}
+		.books ol > li:nth-of-type(20) {--covercolor: hsl(1.6, 63.6%, 45.3%);}
+		.books ol > li:nth-of-type(21) {--covercolor: hsl(217.1, 100%, 36.5%);}
+		.books ol > li:nth-of-type(22) {--covercolor: hsl(24.8, 82.6%, 31.6%);}
+		.books ol > li:nth-of-type(23) {--covercolor: hsl(143.4, 100%, 29.2%);}
+		.books ol > li:nth-of-type(24) {--covercolor: hsl(245.8, 25%, 48.6%);}
+		.books ol > li:nth-of-type(25) {--covercolor: hsl(3.4, 84.7%, 59%);}
+		.books ol > li:nth-of-type(26) {--covercolor: hsl(19.9, 88.9%, 54.1%);}
+		.books ol > li:nth-of-type(27) {--covercolor: hsl(65.4, 100%, 41.8%);}
+		.books ol > li:nth-of-type(28) {--covercolor: hsl(156.3, 100%, 40.2%);}
+		.books ol > li:nth-of-type(29) {--covercolor: hsl(185.7, 100%, 32.9%);}
+		.books ol > li:nth-of-type(30) {--covercolor: hsl(353.4, 36%, 65.1%);}
+		.books ol > li:nth-of-type(31) {--covercolor: hsl(353.7, 97.8%, 63.9%);}
+		.books ol > li:nth-of-type(32) {--covercolor: hsl(116.8, 41.3%, 55.9%);}
+		.books ol > li:nth-of-type(33) {--covercolor: hsl(227.1, 40.5%, 47.5%);}
+		.books ol > li:nth-of-type(34) {--covercolor: hsl(132.9, 54.9%, 40%);}
+		.books ol > li:nth-of-type(35) {--covercolor: hsl(314.1, 45.3%, 48%);}
+		.books ol > li:nth-of-type(36) {--covercolor: hsl(0.5, 58.6%, 39.8%);}
+		.books ol > li:nth-of-type(37) {--covercolor: hsl(212.8, 75.3%, 52.4%);}
+		.books ol > li:nth-of-type(38) {--covercolor: hsl(41.1, 100%, 48%);}
+		.books ol > li:nth-of-type(39) {--covercolor: hsl(323.6, 82.8%, 59%);}
+		.books ol > li:nth-of-type(40) {--covercolor: hsl(208.6, 10.3%, 39.8%);}
+		.books ol > li:nth-of-type(41) {--covercolor: hsl(359.6, 100%, 67.5%);}
+		.books ol > li:nth-of-type(42) {--covercolor: hsl(184.5, 100%, 36.7%);}
+		.books ol > li:nth-of-type(43) {--covercolor: hsl(163.4, 100%, 37.6%);}
+		.books ol > li:nth-of-type(44) {--covercolor: hsl(340.3, 100%, 45.3%);}
+		.books ol > li:nth-of-type(45) {--covercolor: hsl(209.6, 71.3%, 54.9%);}
+		.books ol > li:nth-of-type(46) {--covercolor: hsl(148.6, 100%, 25.5%);}
+		.books ol > li:nth-of-type(47) {--covercolor: hsl(346.3, 100%, 42.9%);}
+		.books ol > li:nth-of-type(48) {--covercolor: hsl(191.8, 33%, 60.8%);}
+		.briefs ol > li:nth-of-type(1)  {--covercolor: hsl(219, 28.6%, 41.2%);}
+		.briefs ol > li:nth-of-type(2)  {--covercolor: hsl(101.1, 26.3%, 42.5%);}
+		.briefs ol > li:nth-of-type(3)  {--covercolor: hsl(23.8, 89.7%, 58%);}
+		.briefs ol > li:nth-of-type(4)  {--covercolor: hsl(4.2, 80.5%, 61.8%);}
+		.briefs ol > li:nth-of-type(5)  {--covercolor: hsl(167.7, 34.9%, 59%);}
+		.briefs ol > li:nth-of-type(6)  {--covercolor: hsl(272.3, 59.7%, 73.7%);}
+		.briefs ol > li:nth-of-type(7)  {--covercolor: hsl(40, 6.7%, 64.7%);}
+		.briefs ol > li:nth-of-type(8)  {--covercolor: hsl(359.5, 82.5%, 68.6%);}
+		.briefs ol > li:nth-of-type(9)  {--covercolor: hsl(338.7, 100%, 58%);}
+		.briefs ol > li:nth-of-type(10) {--covercolor: hsl(38.2, 96.2%, 59%);}
+		.briefs ol > li:nth-of-type(11) {--covercolor: hsl(191.8, 40.2%, 50.2%);}
+		.briefs ol > li:nth-of-type(12) {--covercolor: hsl(101.8, 15.9%, 40.6%);}
+
 	</style>
 	<header>
 		<h1><span aria-hidden="true">🌿</span> Authors Apart</h1>
