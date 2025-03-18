@@ -122,9 +122,15 @@
 		h3 {
 			font-size: 1em;
 		}
-		h1, h2, h3 {
+		hgroup, h2, h3 {
 			margin-top: 3em;
 			margin-bottom: 2em;
+		}
+		hgroup>figure>figcaption { /* copy the default browser styling for blockquotes, for visual consistency */
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 24px;
+			margin-inline-end: 40px;
 		}
 		li {
 			margin-bottom: 2rem;
@@ -132,6 +138,13 @@
 		a {
 			text-decoration: none;
 			border-bottom: 0.0625em solid olive;
+		}
+		.BestAmpersandAvailable {
+			/* https://css-tricks.com/using-the-best-ampersand-available/ */
+			/* https://www.typewolf.com/baskerville */
+			/* https://github.com/system-fonts/modern-font-stacks#transitional */
+			font-family: Baskerville, Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+			font-weight: normal;
 		}
 		.books ol,
 		.briefs ol,
@@ -249,7 +262,13 @@
 		}
 	</style>
 	<header>
-		<h1><span aria-hidden="true">🌿</span> Authors Apart</h1>
+		<hgroup>
+			<h1><span aria-hidden="true">🌿</span> Authors Apart</h1>
+			<figure>
+				<blockquote>“<a href="https://bsky.app/profile/zeldman.bsky.social/post/3ldgj7njlhs2e">[This] A Book Apart authors list by @alandalton.bsky.social is a wonderful indie resource keeping hope&nbsp;alive.</a>”</blockquote>
+				<figcaption>—<a href="https://zeldman.com/">Jeffrey Zeldman</a>, publisher <span class="BestAmpersandAvailable">&amp;</span>&nbsp;cofounder of <a href="https://abookapart.com/">A Book Apart</a></figcaption>
+			</figure>
+		</hgroup>
 	</header>
 	<main>
 		<section class="books">
